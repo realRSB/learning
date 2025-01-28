@@ -6,8 +6,8 @@ Phase 1: Foundational Mastery (Jan 24 – Feb 23)
 Goal: Master the core skills required for ML and AI applications.
 =
 - 2025/01/24 - Build Deep Learning Models with TensorFlow 
-- 2025/01/31 - Learn Python for Data Science
-- 2025/02/07 - Learn Data Analysis with Pandas
+- 2025/01/31 - Learn SQL, Learn Data Analysis with Pandas
+- 2025/02/07 - Learn Immediate Python 3
 - 2025/02/14 - Visualize Data with Python
 - 2025/02/21 - Master Statistics with Python
 
