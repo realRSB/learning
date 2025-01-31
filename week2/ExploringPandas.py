@@ -15,3 +15,12 @@ frances_palmer = orders[(orders.first_name == 'Frances') & (orders.last_name == 
 
 #Part 5: Comfy feet means more time on the street
 comfy_shoes = orders[orders.shoe_type.isin(['clogs', 'boots', 'ballet flats'])]
+
+# Cool lambda functionality
+df = pd.read_csv('employees.csv')
+
+# Add columns here
+get_last_name = lambda x: x.split()[-1]
+df['last_name'] = df.name.apply(get_last_name)
+
+print(df)
