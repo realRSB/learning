@@ -37,3 +37,11 @@ plt.pie(pie_data.number_sold, labels=pie_data.model, startangle=60,
                'teal', 'indigo',  'powderblue', 'royalblue'])
 plt.title('Top 10 EVs sold in the US by count, 2021')
 plt.show()
+
+## YOUR SOLUTION HERE ##
+plt.scatter(scatter_data.danceability, scatter_data.valence, color='teal', alpha=0.15)
+
+plt.title('Mood and Danceability correlation in Spotify genres')
+plt.xlabel('Danceability')
+plt.ylabel('Valence / Mood (sadder to happier)')
+plt.show()
