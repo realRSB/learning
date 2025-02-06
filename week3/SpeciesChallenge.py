@@ -1,3 +1,16 @@
+# How data is structured
+genus	counts	color_label
+0	Psychotria	74	yellowgreen
+1	Protium	63	firebrick
+2	Otoba	54	mediumpurple
+3	Pouteria	41	deepskyblue
+4	Triplaris	35	forestgreen
+5	Brosimum	22	lightgray
+6	Couepia	22	lightgray
+7	Inga	22	orangered
+8	Cordia	20	darkturquoise
+9	Nectandra	16	lightgray
+
 ## YOUR SOLUTION HERE ##
 fig = plt.figure(figsize=(18,16), facecolor='lightgray', tight_layout=True) 
 fig.subplots_adjust(hspace=.6)
