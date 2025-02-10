@@ -55,3 +55,37 @@ ages_scaled = scaler.fit_transform(ages_reshaped)
 
 print(np.mean(ages_scaled))
 print(np.std(ages_scaled))
+
+# 4. Min-Max 
+import pandas as pd
+import numpy as np
+
+coffee = pd.read_csv('starbucks_customers.csv')
+
+spent = coffee['spent']
+
+max_spent = np.max(spent)
+min_spent = np.min(spent)
+spent_range = max_spent - min_spent
+print(spent_range)
+
+spent_normalized = (spent - min_spent) / spent_range
+
+print(spent_normalized)
+
+# 4. Using Sklearn to do MinMax for me
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import MinMaxScaler
+
+coffee = pd.read_csv('starbucks_customers.csv')
+spent = coffee['spent']
+
+spent_reshaped = np.array(spent).reshape(-1, 1)
+
+mmscaler = MinMaxScaler()
+
+reshaped_scaled = mmscaler.fit_transform(spent_reshaped)
+
+print(np.min(reshaped_scaled))
+print(np.max(reshaped_scaled))
