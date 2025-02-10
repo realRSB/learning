@@ -39,3 +39,19 @@ ages_standardized = (ages - mean_age) / std_dev_age
 
 print(np.mean(ages_standardized))
 print(np.std(ages_standardized))
+
+# 3. Using Sklearn to do scaling for me
+import pandas as pd
+import numpy as np
+from sklearn.preprocessing import StandardScaler 
+
+coffee = pd.read_csv('starbucks_customers.csv')
+ages = coffee['age']
+
+scaler = StandardScaler()
+
+ages_reshaped = np.array(ages).reshape(-1,1)
+ages_scaled = scaler.fit_transform(ages_reshaped)
+
+print(np.mean(ages_scaled))
+print(np.std(ages_scaled))
