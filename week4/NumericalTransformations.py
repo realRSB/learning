@@ -1,9 +1,4 @@
 # 1. Centering Data
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt 
-import codecademylib3_seaborn 
-
 coffee = pd.read_csv('starbucks_customers.csv')
 
 ages = coffee.age
@@ -26,9 +21,6 @@ plt.hist(centered_ages)
 plt.show()
 
 # 2. Standardizing Data
-import pandas as pd
-import numpy as np
-
 coffee = pd.read_csv('starbucks_customers.csv')
 ages = coffee['age']
 
@@ -41,10 +33,6 @@ print(np.mean(ages_standardized))
 print(np.std(ages_standardized))
 
 # 3. Using Sklearn to do scaling for me
-import pandas as pd
-import numpy as np
-from sklearn.preprocessing import StandardScaler 
-
 coffee = pd.read_csv('starbucks_customers.csv')
 ages = coffee['age']
 
@@ -57,9 +45,6 @@ print(np.mean(ages_scaled))
 print(np.std(ages_scaled))
 
 # 4. Min-Max 
-import pandas as pd
-import numpy as np
-
 coffee = pd.read_csv('starbucks_customers.csv')
 
 spent = coffee['spent']
@@ -74,10 +59,6 @@ spent_normalized = (spent - min_spent) / spent_range
 print(spent_normalized)
 
 # 4. Using Sklearn to do MinMax for me
-import pandas as pd
-import numpy as np
-from sklearn.preprocessing import MinMaxScaler
-
 coffee = pd.read_csv('starbucks_customers.csv')
 spent = coffee['spent']
 
@@ -91,11 +72,6 @@ print(np.min(reshaped_scaled))
 print(np.max(reshaped_scaled))
 
 # 5. Binning our data
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import codecademylib3_seaborn 
-
 coffee = pd.read_csv('starbucks_customers.csv')
 ages = coffee['age']
 
