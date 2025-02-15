@@ -1,4 +1,4 @@
-from movies import movie_dataset, movie_labels
+from movies import training_set, training_labels, validation_set, validation_labels
 
 def distance(movie1, movie2):
   squared_difference = 0
@@ -20,17 +20,24 @@ def classify(unknown, dataset, labels, k):
   neighbors = distances[0:k]
   num_good = 0
   num_bad = 0
-  for movie in neighbors:
-    title = movie[1]
+  for neighbor in neighbors:
+    title = neighbor[1]
     if labels[title] == 0:
       num_bad += 1
-    else:
+    elif labels[title] == 1:
       num_good += 1
   if num_good > num_bad:
     return 1
   else:
     return 0
+  
+def find_validation_accuracy(training_set, training_labels, validation_set, validation_labels, k):
+  num_correct = 0.0
+  for title in validation_set:
+    guess = classify(validation_set[title], training_set, training_labels, k)
+    if guess == validation_labels[title]:
+      num_correct += 1
+  return num_correct / len(validation_set)
 
-print(classify([.4, .2, .9], movie_dataset, movie_labels, k=5))
-  
-  
+
+print(find_validation_accuracy(training_set, training_labels, validation_set, validation_labels, 3))
