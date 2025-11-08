@@ -1,0 +1,53 @@
+/* Contact Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 500;
+  color: #000000;
+  font-size: 0.95em;
+  margin-bottom: 0.25rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.875rem 1rem;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  font-size: 1em;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  background: #ffffff;
+  color: #000000;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #000000;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover {
+  border-color: #000000;
+  background: #f9f9f9;
+}
+
+form button[type="submit"] {
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 1em;
+  font-size: 1.1em;
+}

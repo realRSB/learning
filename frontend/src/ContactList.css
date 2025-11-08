@@ -1,0 +1,90 @@
+/* Contact List Styles */
+.contact-list-container {
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.contact-list-container h2 {
+  color: #000000;
+  margin-bottom: 1.5rem;
+  font-size: 2em;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+thead {
+  background: #000000;
+  color: #ffffff;
+}
+
+th {
+  padding: 1.25rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.95em;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  border-bottom: 1px solid #000000;
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+td {
+  padding: 1.25rem 1rem;
+  color: #000000;
+}
+
+td:last-child {
+  display: flex;
+  gap: 0.5rem;
+}
+
+td button {
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  border-radius: 6px;
+  margin: 0;
+  border: 2px solid #000000;
+}
+
+td button:first-child {
+  background: #ffffff;
+  color: #000000;
+}
+
+td button:first-child:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+td button:last-child {
+  background: #000000;
+  color: #ffffff;
+}
+
+td button:last-child:hover {
+  background: #ffffff;
+  color: #000000;
+}

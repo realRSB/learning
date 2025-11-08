@@ -18,7 +18,7 @@ STATUS:
 json: {}
 """
 
-from hmac import new
+
 from flask import request, jsonify
 from config import app, db
 from models import Contact
@@ -74,7 +74,7 @@ def update_contact(user_id):
 
     db.session.commit()  # no need for add as data already added in session
 
-    return jsonify({"message: User updated"}), 200
+    return jsonify({"message": "User updated"}), 200
 
 
 @app.route("/delete-contact/<int:user_id>", methods=["DELETE"])
