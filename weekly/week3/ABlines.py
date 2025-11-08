@@ -1,0 +1,10 @@
+## YOUR SOLUTION HERE ##
+plt.hist(hist_data.carapace_length, bins=30, range=(75,155), color='gold')
+plt.title('Lobsters tagged by size')
+plt.ylabel('Number tagged')
+plt.xlabel('Carapace length (mm)')
+plt.axvline(x=83, ymin=0, ymax=1, linewidth=2, dashes=(1, 2), color='mediumblue') 
+plt.axvline(x=127, ymin=0, ymax=1, linewidth=2, dashes=(1, 2), color='mediumblue') 
+plt.annotate('Minimum legal catch size', (84,23))
+plt.annotate('Maximum legal\ncatch size', (128,7))
+plt.show()

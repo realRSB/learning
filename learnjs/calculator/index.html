@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1>basic calculator</h1>
+        <h3>made by Rajveer</h3>
+        <div id="main-container">
+            <div id="input">
+                <input id="num1-el" type="number" />
+                <input id="num2-el" type="number" />
+            </div>
+            <div id="functions">
+                <button class="button" onclick="add()">ADD</button>     
+                <button class="button" onclick="subtract()">SUBTRACT</button>  
+                <button class="button" onclick="multiply()">MULTIPLY</button>  
+                <button class="button" onclick="divide()">DIVIDE</button>    
+            </div>
+            <div id="output">
+                <p id="final"></p>
+                <p id="save-el">Previous entries: </p>
+            </div>
+        </div>
+        <img id="thumbs-up"/>
+        <script src="main.js"></script>
+    </body>
+</html>
